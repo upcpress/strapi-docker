@@ -37,7 +37,7 @@ services:
   strapiDB:
     container_name: strapiDB
     env_file: .env
-    image: mysql:8.0.33
+    image: mysql:8.0.33 # 指定 MySQL 具体版本
     command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_USER: ${DATABASE_USERNAME}
@@ -45,7 +45,7 @@ services:
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
       MYSQL_DATABASE: ${DATABASE_NAME}
     volumes:
-      - ./mysql_data:/var/lib/mysql
+      - ./mysql_data:/var/lib/mysql # MySQL 挂载数据卷至宿主机，记得创建对应目录
     ports:
       - '3306:3306'
     networks:
