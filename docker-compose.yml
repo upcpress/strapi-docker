@@ -30,7 +30,7 @@ services:
       - strapi
     depends_on:
       - strapiDB
-      
+
   strapiDB:
     container_name: strapiDB
     platform: linux/amd64 #for platform error on Apple M1 chips
@@ -45,12 +45,12 @@ services:
       MYSQL_DATABASE: ${DATABASE_NAME}
       MYSQL_ROOT_HOST: '%'
     volumes:
-      -  /mnt/diskd/data/mysql:/var/lib/postgresql/data/ # if you want to use a bind folder
+      -  /mnt/diskd/data/mysql:/var/lib/mysql/ # if you want to use a bind folder
     ports:
       - '3306:3306'
     networks:
       - strapi
-      
+
   strapiAdminer:
     container_name: strapiAdminer
     image: adminer
@@ -67,4 +67,3 @@ services:
 networks:
   strapi:
     external: true
-
