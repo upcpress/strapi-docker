@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "textbook23_falls",
+  "info": {
+    "singularName": "textbook23-fall",
+    "pluralName": "textbook23-falls",
+    "displayName": "Textbook23Fall",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "college": {
+      "type": "string",
+      "required": true
+    },
+    "major": {
+      "type": "string",
+      "required": true
+    },
+    "grade": {
+      "type": "string",
+      "required": true
+    },
+    "course": {
+      "type": "string",
+      "required": true
+    },
+    "courseType": {
+      "type": "string",
+      "required": true
+    },
+    "bookName": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "kwh": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "priceFinal": {
+      "type": "string",
+      "required": true
+    },
+    "comment": {
+      "type": "string"
+    }
+  }
+}
