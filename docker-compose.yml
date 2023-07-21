@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile.prod
     image: strapi:latest
-    restart: unless-stopped
+    restart: always
     env_file: .env
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
@@ -37,7 +37,8 @@ services:
   strapiDB:
     container_name: strapiDB
     env_file: .env
-    image: mysql:8.0.33 # 指定 MySQL 具体版本
+    image: mysql:8.0.33
+    restart: always
     command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_USER: ${DATABASE_USERNAME}
@@ -45,25 +46,12 @@ services:
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
       MYSQL_DATABASE: ${DATABASE_NAME}
     volumes:
-      - ./mysql_data:/var/lib/mysql # MySQL 挂载数据卷至宿主机，记得创建对应目录
+      - ./mysql_data:/var/lib/mysql
     ports:
       - '3306:3306'
     networks:
       - strapi
       
-  # strapiAdminer:
-  #   container_name: strapiAdminer
-  #   image: adminer
-  #   restart: unless-stopped
-  #   ports:
-  #     - '9090:8080'
-  #   environment:
-  #     - ADMINER_DEFAULT_SERVER=strapiDB
-  #   networks:
-  #     - strapi
-  #   depends_on:
-  #     - strapiDB
-
 networks:
   strapi:
     name: Strapi
