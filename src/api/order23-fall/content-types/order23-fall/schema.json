@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order23_falls",
+  "info": {
+    "singularName": "order23-fall",
+    "pluralName": "order23-falls",
+    "displayName": "Order23Fall",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "outTradeNo": {
+      "type": "string"
+    },
+    "bookBriefs": {
+      "type": "json"
+    },
+    "time": {
+      "type": "string"
+    },
+    "totalPrice": {
+      "type": "integer"
+    },
+    "bookDetails": {
+      "type": "json"
+    },
+    "openId": {
+      "type": "string"
+    },
+    "transactionId": {
+      "type": "string"
+    }
+  }
+}
