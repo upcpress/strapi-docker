@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student23_falls",
+  "info": {
+    "singularName": "student23-fall",
+    "pluralName": "student23-falls",
+    "displayName": "Student23Fall",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "college": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "major": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "username": {
+      "type": "string"
+    },
+    "openId": {
+      "type": "string"
+    }
+  }
+}
