@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "major23_falls",
+  "info": {
+    "singularName": "major23-fall",
+    "pluralName": "major23-falls",
+    "displayName": "Major23Fall"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "college": {
+      "type": "string",
+      "required": true
+    },
+    "major": {
+      "type": "string",
+      "required": true
+    },
+    "grade": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
