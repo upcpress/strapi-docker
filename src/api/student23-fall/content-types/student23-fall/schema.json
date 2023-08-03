@@ -4,14 +4,19 @@
   "info": {
     "singularName": "student23-fall",
     "pluralName": "student23-falls",
-    "displayName": "Student23Fall",
-    "description": ""
+    "displayName": "Student23Fall"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "openId": {
+      "type": "string"
+    },
     "college": {
       "type": "string"
     },
@@ -26,11 +31,10 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "username": {
-      "type": "string"
-    },
-    "openId": {
-      "type": "string"
+    "appointment_23_falls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::appointment23-fall.appointment23-fall"
     }
   }
 }

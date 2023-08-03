@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointment23_falls",
+  "info": {
+    "singularName": "appointment23-fall",
+    "pluralName": "appointment23-falls",
+    "displayName": "Appointment23Fall",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "timeslot_23_fall": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::timeslot23-fall.timeslot23-fall"
+    },
+    "order_23_falls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order23-fall.order23-fall"
+    }
+  }
+}

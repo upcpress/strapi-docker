@@ -32,6 +32,11 @@
     },
     "transactionId": {
       "type": "string"
+    },
+    "appointment_23_fall": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::appointment23-fall.appointment23-fall"
     }
   }
 }
