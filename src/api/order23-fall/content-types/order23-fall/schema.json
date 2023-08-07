@@ -42,6 +42,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::student23-fall.student23-fall"
+    },
+    "closed": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
