@@ -4,7 +4,8 @@
   "info": {
     "singularName": "student23-fall",
     "pluralName": "student23-falls",
-    "displayName": "Student23Fall"
+    "displayName": "Student23Fall",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -35,6 +36,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::appointment23-fall.appointment23-fall"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "truename": {
+      "type": "string"
     }
   }
 }
