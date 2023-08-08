@@ -31,7 +31,8 @@
       "type": "string"
     },
     "transactionId": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "appointment_23_fall": {
       "type": "relation",
