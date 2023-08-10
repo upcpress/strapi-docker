@@ -49,6 +49,9 @@
       "default": false
     },
     "appointmentTime": {
+      "type": "datetime"
+    },
+    "appointmentId": {
       "type": "string"
     }
   }
