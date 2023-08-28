@@ -42,6 +42,9 @@
     },
     "truename": {
       "type": "string"
+    },
+    "classNum": {
+      "type": "integer"
     }
   }
 }
