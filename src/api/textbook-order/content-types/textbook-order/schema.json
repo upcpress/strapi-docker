@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "textbook_orders",
+  "info": {
+    "singularName": "textbook-order",
+    "pluralName": "textbook-orders",
+    "displayName": "TextbookOrder",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "beginDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "unappointableDates": {
+      "type": "string"
+    },
+    "dayOffset": {
+      "type": "integer"
+    }
+  }
+}
