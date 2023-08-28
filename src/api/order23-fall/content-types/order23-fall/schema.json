@@ -22,7 +22,7 @@
       "type": "string"
     },
     "totalPrice": {
-      "type": "integer"
+      "type": "biginteger"
     },
     "bookDetails": {
       "type": "json"
@@ -53,6 +53,16 @@
     },
     "appointmentId": {
       "type": "string"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "priceError": {
+      "type": "boolean",
+      "default": false
+    },
+    "payerTotal": {
+      "type": "biginteger"
     }
   }
 }
