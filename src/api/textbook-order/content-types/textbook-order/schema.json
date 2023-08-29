@@ -23,6 +23,12 @@
     },
     "dayOffset": {
       "type": "integer"
+    },
+    "colleges": {
+      "type": "text"
+    },
+    "grades": {
+      "type": "string"
     }
   }
 }
