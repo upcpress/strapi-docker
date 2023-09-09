@@ -24,7 +24,7 @@
     "availableSlots": {
       "type": "integer",
       "min": 0,
-      "max": 30
+      "max": 35
     },
     "totalSlots": {
       "type": "integer"
