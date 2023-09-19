@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tspt_docs",
+  "info": {
+    "singularName": "tspt-doc",
+    "pluralName": "tspt-docs",
+    "displayName": "TsptDoc",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "index": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bookAbbr": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "originalDocUrl": {
+      "type": "string"
+    }
+  }
+}

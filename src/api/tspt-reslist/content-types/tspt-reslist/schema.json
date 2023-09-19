@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tspt_reslists",
+  "info": {
+    "singularName": "tspt-reslist",
+    "pluralName": "tspt-reslists",
+    "displayName": "TsptResList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bookAbbr": {
+      "type": "string"
+    },
+    "resIndex": {
+      "type": "integer"
+    },
+    "resType": {
+      "type": "enumeration",
+      "enum": [
+        "video",
+        "singleVideo",
+        "audio",
+        "figure",
+        "ebook",
+        "doc",
+        "article",
+        "quiz",
+        "code",
+        "link",
+        "download",
+        "mixed"
+      ]
+    }
+  }
+}

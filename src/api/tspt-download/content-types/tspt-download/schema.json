@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tspt_downloads",
+  "info": {
+    "singularName": "tspt-download",
+    "pluralName": "tspt-downloads",
+    "displayName": "TsptDownload"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "index": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bookAbbr": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "media": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

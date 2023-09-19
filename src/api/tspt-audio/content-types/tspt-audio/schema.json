@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tspt_audios",
+  "info": {
+    "singularName": "tspt-audio",
+    "pluralName": "tspt-audios",
+    "displayName": "TsptAudio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "index": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "bookAbbr": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    }
+  }
+}
