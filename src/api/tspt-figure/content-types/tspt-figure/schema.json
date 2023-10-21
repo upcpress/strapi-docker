@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tspt-figure",
     "pluralName": "tspt-figures",
-    "displayName": "TsptFigure"
+    "displayName": "TsptFigure",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,9 @@
     },
     "files": {
       "type": "json"
+    },
+    "headerTitle": {
+      "type": "string"
     }
   }
 }
