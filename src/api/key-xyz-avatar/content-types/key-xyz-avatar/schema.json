@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "key_xyz_avatars",
+  "info": {
+    "singularName": "key-xyz-avatar",
+    "pluralName": "key-xyz-avatars",
+    "displayName": "KeyXYZAvatar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "packageCover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "orderId": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
