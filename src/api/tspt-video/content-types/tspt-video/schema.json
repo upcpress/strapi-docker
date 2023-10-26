@@ -34,6 +34,9 @@
       "allowedTypes": [
         "videos"
       ]
+    },
+    "subIndex": {
+      "type": "integer"
     }
   }
 }
