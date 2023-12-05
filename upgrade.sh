@@ -13,4 +13,3 @@ printf 'image deleted\n'
 
 docker compose -f compose-dev.yml up -d
 printf 'done\n'
-
