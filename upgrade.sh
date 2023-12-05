@@ -11,5 +11,5 @@ printf 'container deleted\n'
 docker image rm $CONTAINER_NAME
 printf 'image deleted\n'
 
-docker compose -f compose-dev.yml up -d
+docker compose -f compose-remote.yml up -d
 printf 'done\n'
