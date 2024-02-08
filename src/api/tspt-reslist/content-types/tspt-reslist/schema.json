@@ -23,6 +23,8 @@
       "enum": [
         "video",
         "singleVideo",
+        "videoWithSubList",
+        "videoWithImages",
         "audio",
         "figure",
         "ebook",
@@ -32,7 +34,6 @@
         "code",
         "link",
         "download",
-        "videoWithImages",
         "mixed"
       ]
     }
