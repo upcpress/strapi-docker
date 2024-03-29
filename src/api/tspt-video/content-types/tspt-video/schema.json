@@ -37,6 +37,9 @@
     },
     "subIndex": {
       "type": "integer"
+    },
+    "toc": {
+      "type": "text"
     }
   }
 }
