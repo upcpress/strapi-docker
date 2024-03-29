@@ -24,6 +24,7 @@
         "video",
         "singleVideo",
         "videoWithSubList",
+        "videoListWithToc",
         "videoWithImages",
         "audio",
         "figure",
@@ -34,7 +35,9 @@
         "code",
         "link",
         "download",
-        "mixed"
+        "resourceList",
+        "mixed",
+        "placeHolder"
       ]
     }
   }
