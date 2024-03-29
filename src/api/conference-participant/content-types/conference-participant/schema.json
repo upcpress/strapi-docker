@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conference_participants",
+  "info": {
+    "singularName": "conference-participant",
+    "pluralName": "conference-participants",
+    "displayName": "ConferenceParticipant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "text",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}
