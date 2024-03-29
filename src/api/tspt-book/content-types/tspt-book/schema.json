@@ -29,6 +29,9 @@
     },
     "resCount": {
       "type": "integer"
+    },
+    "intro": {
+      "type": "json"
     }
   }
 }
