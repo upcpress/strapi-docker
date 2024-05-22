@@ -31,6 +31,8 @@
         "ebook",
         "doc",
         "article",
+        "articleWithAudio",
+        "articleWithVideo",
         "quiz",
         "code",
         "link",
