@@ -28,6 +28,25 @@
     },
     "email": {
       "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "idNumber": {
+      "type": "string"
+    },
+    "trainNumber": {
+      "type": "string"
+    },
+    "confName": {
+      "type": "text"
+    },
+    "note": {
+      "type": "text"
     }
   }
 }
