@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yd_orders",
+  "info": {
+    "singularName": "yd-order",
+    "pluralName": "yd-orders",
+    "displayName": "YdOrder",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "yd_order"
+    },
+    "detail": {
+      "type": "json"
+    }
+  }
+}
