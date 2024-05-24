@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zzz_test_tables",
+  "info": {
+    "singularName": "zzz-test-table",
+    "pluralName": "zzz-test-tables",
+    "displayName": "ZzzTestTable",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "boolean",
+      "default": true
+    },
+    "age": {
+      "type": "integer"
+    }
+  }
+}
