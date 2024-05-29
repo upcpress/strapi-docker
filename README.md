@@ -1,57 +1,15 @@
-# 🚀 Getting started with Strapi
+# 标准操作流程
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+## 1. 本地制作并上传 Docker 镜像
 
-### `develop`
+1. 本地执行 `docker build -t strapi.node-base -f .\Dockerfile.node-base .`，构建基础镜像。
+2. 然后执行 `docker build -t strapi.final -f .\Dockerfile.final .`，构建最终镜像。
+3. 执行 `docker login --username=hi*****@aliyun.com registry.cn-qingdao.aliyuncs.com`，登录阿里云容器镜像服务。
+4. 执行 `docker tag [ImageId] registry.cn-qingdao.aliyuncs.com/[命名空间]/[镜像仓库名称]:[镜像版本号]`，给镜像打标签。
+5. 执行 `docker push registry.cn-qingdao.aliyuncs.com/[命名空间]/[镜像仓库名称]:[镜像版本号]`，推送镜像到阿里云容器镜像服务。
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+## 2. 服务器拉取并运行 Docker 镜像
 
-```
-npm run develop
-# or
-yarn develop
-```
-
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+1. 服务器执行 `docker login --username=hi*****@aliyun.com registry.cn-qingdao.aliyuncs.com`，登录阿里云容器镜像服务。
+2. 服务器执行 `docker pull registry.cn-qingdao.aliyuncs.com/[命名空间]/[镜像仓库名称]:[镜像版本号]`，拉取镜像。
+3. 服务器执行 `docker compose -f compose-remote.yml up -d`，运行容器。然后查看 Docker 日志，确认容器启动成功。
