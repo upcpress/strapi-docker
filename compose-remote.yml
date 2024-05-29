@@ -1,7 +1,7 @@
 services:
   strapi:
     container_name: strapi
-    image: registry.cn-qingdao.aliyuncs.com/upcpress/strapi:4.24.2
+    image: registry.cn-qingdao.aliyuncs.com/upcpress/strapi:4.24.2-2
     restart: unless-stopped
     env_file: .env
     environment:
