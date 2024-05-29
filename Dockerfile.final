@@ -1,0 +1,15 @@
+FROM strapi.node-base as build
+
+RUN yarn config set network-timeout 600000 -g && yarn config set registry https://registry.npmmirror.com && yarn global add node-gyp && yarn install && yarn cache clean
+
+ENV PATH /opt/node_modules/.bin:$PATH
+WORKDIR /opt/app
+# COPY . .
+# RUN chown -R node:node /opt/app
+COPY --chown=node:node . .
+
+USER node
+RUN ["yarn", "strapi", "ts:generate-types"]
+RUN ["yarn", "build"]
+EXPOSE 1337
+CMD ["yarn", "develop"]
