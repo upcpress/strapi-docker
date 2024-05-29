@@ -33,9 +33,9 @@ services:
 
   strapiDB:
     container_name: strapiDB
-    env_file: .env
     image: mysql:8.0.33
     restart: always
+    env_file: .env
     command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_USER: ${DATABASE_USERNAME}
