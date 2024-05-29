@@ -3,10 +3,8 @@ version: "3"
 services:
   strapi:
     container_name: strapi
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: strapi:latest
+    # 先执行 docker build 命令编译出基础镜像和最终镜像，再执行本 compose 文件
+    image: strapi.final
     restart: always
     env_file: .env
     environment:
@@ -22,8 +20,6 @@ services:
     volumes:
       - ./config:/opt/app/config
       - ./src:/opt/app/src
-      - ./package.json:/opt/package.json
-      - ./yarn.lock:/opt/yarn.lock
       - ./.env:/opt/app/.env
       - ./public/uploads:/opt/app/public/uploads
     ports:
