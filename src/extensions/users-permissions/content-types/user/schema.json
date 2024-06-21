@@ -67,12 +67,6 @@
     },
     "passwordUpdated": {
       "type": "boolean"
-    },
-    "yd_order": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::yd-order.yd-order",
-      "mappedBy": "users_permissions_user"
     }
   }
 }

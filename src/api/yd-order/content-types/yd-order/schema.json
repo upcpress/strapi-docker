@@ -12,14 +12,69 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "users_permissions_user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "yd_order"
+    "appid": {
+      "type": "string"
     },
-    "detail": {
+    "mchid": {
+      "type": "string"
+    },
+    "out_trade_no": {
+      "type": "string"
+    },
+    "transaction_id": {
+      "type": "string"
+    },
+    "trade_type": {
+      "type": "string"
+    },
+    "trade_state": {
+      "type": "string"
+    },
+    "trade_state_desc": {
+      "type": "string"
+    },
+    "bank_type": {
+      "type": "string"
+    },
+    "attach": {
+      "type": "string"
+    },
+    "success_time": {
+      "type": "string"
+    },
+    "payer_openid": {
+      "type": "string"
+    },
+    "amount_total": {
+      "type": "biginteger"
+    },
+    "amount_payer_total": {
+      "type": "biginteger"
+    },
+    "amount_currency": {
+      "type": "string"
+    },
+    "amount_payer_currency": {
+      "type": "string"
+    },
+    "scene_info_device_id": {
+      "type": "string"
+    },
+    "promotion_detail": {
       "type": "json"
+    },
+    "is_refund": {
+      "type": "boolean",
+      "default": false
+    },
+    "refund_id": {
+      "type": "string"
+    },
+    "out_refund_no": {
+      "type": "string"
+    },
+    "refund_status": {
+      "type": "string"
     }
   }
 }

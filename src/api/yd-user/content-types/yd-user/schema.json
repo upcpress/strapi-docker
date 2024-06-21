@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yd_users",
+  "info": {
+    "singularName": "yd-user",
+    "pluralName": "yd-users",
+    "displayName": "YdUser"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "yd_orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yd-order.yd-order"
+    }
+  }
+}
